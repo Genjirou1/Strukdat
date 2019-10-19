@@ -1,0 +1,9 @@
+package Rumah;
+
+public class Helowot1juta {
+    public static void main(String[] args) {
+        for (int i = 0; i <1000000 ; i++) {
+            System.out.println("Helowot");
+        }
+    }
+}
