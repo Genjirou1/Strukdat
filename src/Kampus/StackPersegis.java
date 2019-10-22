@@ -1,18 +1,20 @@
 package Kampus;
 
-public class StackPersegi {
+public class StackPersegis {
 
         private Persegi data[];
         private int top;
 
-       public StackPersegi(int jumlah){
+        public StackPersegis(int jumlah)
+        {
             data = new Persegi[jumlah];
             top = -1;
         }
 
-        public void push(int x){
+        public void push(Persegi nilai)
+        {
             if( top < data.length-1 ) {
-                data[++top]=new Persegi(x);
+                data[++top] = nilai;
             }
         }
 
@@ -31,5 +33,4 @@ public class StackPersegi {
             }
         }
 
-    }
-
+}
