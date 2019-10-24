@@ -11,4 +11,12 @@ public class Persegi {
     public double keliling(){
         return 4*sisi;
     }
+
+    public double getSisi() {
+        return sisi;
+    }
+
+    public void setSisi(double sisi) {
+        this.sisi = sisi;
+    }
 }
