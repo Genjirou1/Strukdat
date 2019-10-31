@@ -1,35 +1,14 @@
 package Kampus;
-public class Stacks {
 
-    private int data[];
-    private int top;
+import java.util.Stack;
 
-    public Stacks(int jumlah)
-    {
-        data = new int[jumlah];
-        top = -1;
+public class STACKS {
+    public static void main(String[] args) {
+        Stack<Persegi> a = new Stack<Persegi>();
+        a.push(new Persegi(5));
+        a.push(new Persegi(5));
+        a.push(new Persegi(5));
+
+        System.out.println(a.peek().luas());
     }
-
-    public void push(int nilai)
-    {
-        if( top < data.length-1 ) {
-            data[++top] = nilai;
-        }
-    }
-
-    public int pop() {
-        if( top >= 0 ) {
-            int temp = data[top--];
-            return temp;
-        }
-        return 0;
-    }
-
-    public void print()
-    {
-        for (int i = data.length-1; i >= 0; i--) {
-            System.out.println(data[i]);
-        }
-    }
-
 }
