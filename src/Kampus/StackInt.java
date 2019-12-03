@@ -11,6 +11,8 @@ public class StackInt {
 
     public void push(int input){
         if (top > data.length-1){
+
+        }else{
             top++;
             data[top]= input;
         }
@@ -24,5 +26,10 @@ public class StackInt {
             return  temp;
         }
         return 0;
+    }
+    public void print(){
+        for (int i = data.length-1; i >=0 ; i--) {
+            System.out.println(data[i]);
+        }
     }
 }
