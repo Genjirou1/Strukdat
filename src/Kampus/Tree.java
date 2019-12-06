@@ -1,20 +1,31 @@
 package Kampus;
 
 public class Tree {
-    private TreeNode root;
+     TreeNode root;
 
-    public void insert(int value){
+    public void insertNode(int value){
         TreeNode baru = new TreeNode(value);
         if (root == null){
             root = baru;
         }else{
             root.insertNode(baru);
         }
-//        if (root == null){
-//            root = new TreeNode(value);
-//        }else{
-//            root.insert(value);
-//        }
+    }
+    public void insert(int value){
+        if (root == null){
+            root = new TreeNode(value);
+        }else{
+            root.insert(value);
+        }
+    }
+    public void preOrder(){
+        root.preOrder();
+    }
+    public void inOrder(){
+        root.inOrder();
+    }
+    public void postOrder(){
+        root.postOrder();
     }
 
 }
