@@ -31,7 +31,6 @@ public class TreeNode {
         if (value < this.value){
             if (this.left == null){
                 this.left = new TreeNode(value);
-
             }else  {
                 this.left.insert(value);
             }
@@ -47,21 +46,47 @@ public class TreeNode {
     }
     public void preOrder(){
         //XAB
-        System.out.println(this.value);//X
-        this.left.preOrder();//A
-        this.right.preOrder();//B
+        System.out.println(this.value);
+        if (this.left !=null){
+            left.preOrder();
+        }
+        if (this.right!=null){
+            right.preOrder();
+        }
+
+
+
+
+//        System.out.println(this.value);//X
+//        this.left.preOrder();//A
+//        this.right.preOrder();//B
 //        System.out.println(this.value);
 //        System.out.println(this.left.value);
 //        System.out.println(this.right.value);
     }
     public void inOrder(){
         //AXB
+
+        if (this.left !=null){
+            left.preOrder();
+        }
+        System.out.println(this.value);
+        if (this.right!=null){
+            right.preOrder();
+        }
 //        this.left.inOrder();//A
 //        System.out.println(this.value);//X
 //        this.right.inOrder();//B
     }
     public void postOrder(){
         //ABX
+        if (this.left !=null){
+            left.preOrder();
+        }
+        if (this.right!=null){
+            right.preOrder();
+        }
+        System.out.println(this.value);
 //        this.left.postOrder();//A
 //        this.right.postOrder();//B
 //        System.out.println(this.value);//X

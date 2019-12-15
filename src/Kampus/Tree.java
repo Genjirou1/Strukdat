@@ -19,13 +19,27 @@ public class Tree {
         }
     }
     public void preOrder(){
-        root.preOrder();
+        if (root != null){
+            root.preOrder();
+        }else {
+            System.out.println("Data Kosong");
+        }
+
     }
     public void inOrder(){
-        root.inOrder();
+        if (root != null){
+            root.inOrder();
+        }else{
+            System.out.println("Data Kosong");
+        }
     }
     public void postOrder(){
-        root.postOrder();
+       if (root != null){
+           root.postOrder();
+       }
+       else {
+           System.out.println("Data Kosong");
+       }
     }
 
 }

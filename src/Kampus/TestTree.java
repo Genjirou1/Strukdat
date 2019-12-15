@@ -11,8 +11,7 @@ public class TestTree {
         a.insert(11);
         a.insert(12);
 
-        a.preOrder();
-        a.inOrder();
         a.postOrder();
+
     }
 }
